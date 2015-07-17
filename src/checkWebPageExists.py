@@ -62,8 +62,10 @@ def main(argv):
         totalPages = totalPages + 1 
         newFile.write(id + " " + title + "\n")
     newFile.close()
+    fi.close()
     print("totalPages = " + str(totalPages))
     return 
+    
 if __name__ == "__main__":
     main(sys.argv)
 
