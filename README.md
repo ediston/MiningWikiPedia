@@ -4,7 +4,7 @@
 
 <h2>How to get Simple Wikipedia(SW) data?</h2>
 ------------------------------------------------------------------------------------------
-<h3>Step1:How to get Id title mapping for Wikipedia</h3>
+<h3>Step1: How to get Id title mapping for Wikipedia</h3>
 Example: What is the page id for "August" page?
 <p>
 Step1.1: <a href="http://dumps.wikimedia.org/simplewiki/" target="_blank">Go to the page for latest dump.</a></br>
@@ -14,7 +14,7 @@ Step1.4: Clean the file. Wiki DB still have some page titles which no more exist
 sqlDumpTo_ID_Title_Map.py can be found in the src folder
 </p>
 ------------------------------------------------------------------------------------------
-<h3>Step2:How to get Links to create graph for Wikipdeia</h3>
+<h3>Step2: How to get Links to create graph for Wikipdeia</h3>
 Example: What are the the page ids linked on "August" page?
 <p>
 Step2.1: <a href="http://dumps.wikimedia.org/simplewiki/" target="_blank">Go to the page for latest dump.</a></br>
