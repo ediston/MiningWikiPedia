@@ -10,6 +10,7 @@ Example: What is the page id for "August" page?
 Step1.1: <a href="http://dumps.wikimedia.org/simplewiki/" target="_blank">Go to the page for latest dump.</a></br>
 Step1.2: Download <b>Base per-page data (id, title, old restrictions, etc)</b> or simplewiki-date-page.sql.gz file</br>
 Step1.3: Run: $ zcat simplewiki-date-page.sql.gz | python sqlDumpTo_ID_Title_Map.py > SWPageIDTitleMap.csv
+Step1.4: Clean the file. Wiki DB still have some page titles which no more exist. So remove such title. Run $ python checkWebPageExists.py SWPageIDTitleMap.csv
 sqlDumpTo_ID_Title_Map.py can be found in the src folder
 </p>
 ------------------------------------------------------------------------------------------
