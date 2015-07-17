@@ -8,7 +8,7 @@
 Example: What is the page id for "August" page?
 <p>
 Step1.1: <a href="http://dumps.wikimedia.org/simplewiki/" target="_blank">Go to the page for latest dump.</a></br>
-Step1.2: Download Base per-page data (id, title, old restrictions, etc) or simplewiki-date-page.sql.gz file</br>
+Step1.2: Download <b>Base per-page data (id, title, old restrictions, etc)</b> or simplewiki-date-page.sql.gz file</br>
 Step1.3: Run: $ zcat simplewiki-date-page.sql.gz | python sqlDumpTo_ID_Title_Map.py > SWPageIDTitleMap.csv
 sqlDumpTo_ID_Title_Map.py can be found in the src folder
 </p>
@@ -17,7 +17,7 @@ sqlDumpTo_ID_Title_Map.py can be found in the src folder
 Example: What are the the page ids linked on "August" page?
 <p>
 Step2.1: <a href="http://dumps.wikimedia.org/simplewiki/" target="_blank">Go to the page for latest dump.</a></br>
-Step2.2: Download Base Wiki page-to-page link records or simplewiki-date-pagelinks.sql.gz  file</br>
+Step2.2: Download <b>page-to-page link records</b> or simplewiki-date-pagelinks.sql.gz  file</br>
 Step2.3: Run: $ zcat simplewiki-date-pagelinks.sql.gz | python sqlDumpTo_ID_Title_Map.py > SW_ID_Title_Links.csv
 sqlDumpTo_ID_Title_Map.py can be found in the src folder
 </p>
