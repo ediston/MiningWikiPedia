@@ -49,23 +49,30 @@ def main(argv):
         exit(0)
     totalPages = 0
     newFile = open(newFileName, 'w')
+    newFile.close()
     lines = fi.readlines()
+    totalPages = len(lines)
+    donePages = 0
     for line in lines:
         line = line.rstrip()
         row = line.split(' ')
-        id = row[0]
+        pageId = row[0]
         title = row[1]
         url = getCompleteURL(title)
+        donePages = donePages + 1
+        if donePages%10==0:
+            print("Remaining pages:" + str(totalPages - donePages))
         if checkIfWebPageExisits(url) == False:
             print(title)
-            continue
-        totalPages = totalPages + 1 
-        newFile.write(id + " " + title + "\n")
-    newFile.close()
+            continue 
+        newFile = open(newFileName, 'a+')
+        newFile.write(pageId + " " + title + "\n")
+        newFile.close() 
     fi.close()
     print("totalPages = " + str(totalPages))
     return 
-    
+
 if __name__ == "__main__":
     main(sys.argv)
+
 
