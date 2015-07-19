@@ -22,4 +22,18 @@ Step2.2: Download <b>page-to-page link records</b> or simplewiki-date-pagelinks.
 Step2.3: Run: $ zcat simplewiki-date-pagelinks.sql.gz | python sqlDumpTo_ID_Title_Map.py > SW_ID_Title_Links.csv</br>
 sqlDumpTo_ID_Title_Map.py can be found in the src folder
 </p>
+-----------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------
+<h3>Step3: Pre Process Edge list</h3>
+<p>
+Step3.1: Let's firstly remove all page-ids from "SWPageIDTitleMap.csv" which are no more live.</br> 
+    * Run: $ python checkWebPageExists.py SWPageIDTitleMap.csv.</br> 
+    * This will create a new file "filtered_SWPageIDTitleMap.csv".</br>
+    * Note: This step might take a lot of time. FOr simple wiki it took almost 24 hours.</br>
+Step3.2: Convert Id-title edge list to id id edge list
+    * 
+Step3.3: Run: $ zcat simplewiki-date-pagelinks.sql.gz | python sqlDumpTo_ID_Title_Map.py > SW_ID_Title_Links.csv</br>
+sqlDumpTo_ID_Title_Map.py can be found in the src folder
+</p>
+------------------------------------------------------------------------------------------
+convert_idTitle_Edgelist_To_IdId.py
