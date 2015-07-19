@@ -22,7 +22,6 @@ Step2.2: Download <b>page-to-page link records</b> or simplewiki-date-pagelinks.
 Step2.3: Run: $ zcat simplewiki-date-pagelinks.sql.gz | python sqlDumpTo_ID_Title_Map.py > SW_ID_Title_Links.csv</br>
 sqlDumpTo_ID_Title_Map.py can be found in the src folder
 </p>
------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------
 <h3>Step3: Pre Process Edge list</h3>
 <p>
