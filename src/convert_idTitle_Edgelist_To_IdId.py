@@ -67,7 +67,6 @@ def main(argv):
     newFile = open(newFileName, 'w')
     newFile.close()
     lines = idTitleEdgeFi.readlines()
-    edgeId = 0
     for line in lines:
         line = line.rstrip()
         row = line.split(' ')
@@ -83,11 +82,10 @@ def main(argv):
             continue
         newFile = open(newFileName, 'a+')
         if int(fromPageId) > int(ToPageId) :
-            newFile.write(ToPageId + " " + fromPageId + " " + str(edgeId) + "\n")
+            newFile.write(ToPageId + " " + fromPageId + "\n")
         else:
-            newFile.write(fromPageId + " " + ToPageId + " " + str(edgeId) + "\n")
+            newFile.write(fromPageId + " " + ToPageId + "\n")
         newFile.close()
-        edgeId = edgeId + 1
         totalEdges = totalEdges + 1
     #-- close the files
     idTitleEdgeFi.close()
