@@ -67,6 +67,7 @@ def main(argv):
     newFile = open(newFileName, 'w')
     newFile.close()
     lines = idTitleEdgeFi.readlines()
+    edgeId = 0
     for line in lines:
         line = line.rstrip()
         row = line.split(' ')
@@ -78,12 +79,15 @@ def main(argv):
         if not titleToIdMap.has_key(ToPageTitle) or not (fromPageId in titleToIdMap.values()):
             continue
         ToPageId = titleToIdMap[ToPageTitle]
+        if ToPageId == fromPageId:
+            continue
         newFile = open(newFileName, 'a+')
         if int(fromPageId) > int(ToPageId) :
-            newFile.write(ToPageId + " " + fromPageId + "\n")
+            newFile.write(ToPageId + " " + fromPageId + " " + str(edgeId) + "\n")
         else:
-            newFile.write(fromPageId + " " + ToPageId + "\n")
+            newFile.write(fromPageId + " " + ToPageId + " " + str(edgeId) + "\n")
         newFile.close()
+        edgeId = edgeId + 1
         totalEdges = totalEdges + 1
     #-- close the files
     idTitleEdgeFi.close()
