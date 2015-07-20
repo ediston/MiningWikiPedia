@@ -52,7 +52,7 @@ int main (int argc, char const *argv[]){
     for(sit = edges.begin(); sit!=edges.end(); sit++){
         ni = (*sit).first;
         nj = (*sit).second;
-        fprintf(newIdIdFile, "%ld %ld %ld\n", ni, nj);
+        fprintf(newIdIdFile, "%ld %ld\n", ni, nj);
         edgeId++;
     }
     fclose(newIdIdFile);
