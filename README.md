@@ -52,7 +52,7 @@ Step 4.4: Count total disambg edges in finalSWEdgeList.csv</br>
 <h1>Results, SW DB of <a href="http://dumps.wikimedia.org/simplewiki/20150603/" target="_blank">June, 2015</a> </h1>
 <table>
  <tr>
-  <td>Total Edges</td>
+  <td>Finally Total Edges</td>
   <td>2699230</td>
  </tr>
  <tr>
