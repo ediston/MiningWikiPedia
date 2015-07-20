@@ -38,9 +38,6 @@ Step3.3: Remove Duplicate and same node edges like "A  A"     </br>
 &nbsp;&nbsp;&nbsp;&nbsp;Usage  : $ ./remDupAndSort filtered_Id_Id_EdgeList.csv finalSWEdgeList.csv</br>
 </p>
 </br>
-</br>
-Result, SW DB of June, 2015: Total Edges:2699230
-</br>
 ------------------------------------------------------------------------------------------
 <h4>Step 4: Get list of disambiguation</h4>
 <p>Disambiguation pages will form the ground truth. All such pages should be definitely in different clusters.</p>
@@ -48,7 +45,21 @@ Result, SW DB of June, 2015: Total Edges:2699230
 Step 4.1: <a href="http://dumps.wikimedia.org/simplewiki/" target="_blank">Go to the page for latest dump.</a></br>
 Step 4.2: Download <b>Wiki category membership link records</b>simplewiki-date-categorylinks.sql.gz file</br>
 Step 4.3: Run: $ zcat simplewiki-date-categorylinks.sql.gz | python sqlDumpTo_Disamb_Id.py > disamb.csv</br>
- 
+Step 4.4: Count total disambg edges in finalSWEdgeList.csv</br>
+&nbsp;&nbsp;&nbsp;&nbsp;Compile: $ g++ -O3 -o countDisamEdgeNodes countDisamEdgeNodes.cpp</br>
+&nbsp;&nbsp;&nbsp;&nbsp;Usage  : $ ./countDisamEdgeNodes filtered_Id_Id_EdgeList.csv disamb.csv</br>
+------------------------------------------------------------------------------------------
+<h1>Results, SW DB of <a href="http://dumps.wikimedia.org/simplewiki/20150603/" target="_blank">June, 2015</a> </h1>
+<table>
+ <tr>
+  <td>Total Edges</td>
+  <td>2699230</td>
+ </tr>
+ <tr>
+  <td>Total Disamb edges</td>
+  <td>19404</td>
+ </tr>
+</table> 
 </p>
 
 
