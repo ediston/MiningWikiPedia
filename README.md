@@ -41,7 +41,14 @@ Step3.3: Remove Duplicate and same node edges like "A  A"     </br>
 </br>
 Result, SW DB of June, 2015: Total Edges:2699230
 </br>
-
 ------------------------------------------------------------------------------------------
+<h4>Step 4: Get list of disambiguation</h4>
+<p>Disambiguation pages will form the ground truth. All such pages should be definitely in different clusters.</p>
+<p>
+Step 4.1: <a href="http://dumps.wikimedia.org/simplewiki/" target="_blank">Go to the page for latest dump.</a></br>
+Step 4.2: Download <b>Wiki category membership link records</b>simplewiki-date-categorylinks.sql.gz file</br>
+Step 4.3: Run: $ zcat simplewiki-date-categorylinks.sql.gz | python sqlDumpTo_Disamb_Id.py > disamb.csv</br>
+ 
+</p>
 
 
