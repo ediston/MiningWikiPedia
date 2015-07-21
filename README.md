@@ -62,4 +62,5 @@ Step 4.4: Count total disambg edges in finalSWEdgeList.csv</br>
 </table> 
 </p>
 
-
+------------------------------------------------------------------------------------------
+./cluster networkEdgeIdMap.csv newnetwork.jaccs newnetwork.clusters newnetwork.cluster_stats 0.01 > runtimecluster
