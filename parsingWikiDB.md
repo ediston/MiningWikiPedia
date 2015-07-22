@@ -90,8 +90,12 @@ Step 4.4: Count total disambg edges in finalSWEdgeList.csv</br>
   <td>4721604</td>
  </tr>
  <tr>
-  <td>Finally Total Edges, after removing Duplicates</td>
+  <td>Total Edges, after removing Duplicates</td>
   <td>3432718</td>
+ </tr>
+  <tr>
+  <td>Total File Size On disk, after removing Duplicates</td>
+  <td>44 M</td>
  </tr>
  <tr>
   <td>Total Disamb edges</td>
