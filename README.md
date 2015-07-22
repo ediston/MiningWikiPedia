@@ -47,8 +47,23 @@ Steps:</br>
 <p>
 ./createEdgesToEdgeIDJaccsFile network.pairs network.jaccs networkEdgeIdMap.csv newnetwork.jaccs
 </p>
+<h6>RESULT</h6>
+<p>
+<table>
+<tr><td>
+Time taken to create new file:</td><td> 4476.1 seconds
+</td></tr> 
+<tr><td>
+New finalSWEdgeList.jacc file size  </td><td> 42G
+</td></tr>
+<tr><td>
+File size decreased by  </td><td> 31.14%
+</td></tr>
+</table>
+</p>
 
 
+----------------------------------
 <p>
 Step1.1: <a href="http://dumps.wikimedia.org/simplewiki/" target="_blank">Go to the page for latest dump.</a></br>
 Step1.2: Download <b>Base per-page data (id, title, old restrictions, etc)</b> or simplewiki-date-page.sql.gz file</br>
