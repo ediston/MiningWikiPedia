@@ -24,6 +24,8 @@ finalSWEdgeList.jacc file size  </td><td> 61G
 </table>
 Example: What is the page id for "August" page?
 <h3>Step 2: Create edge id map <h3>
+<h6>[Observation1: File size can be dramatically decreased if we can use id's for edges, then we have three numbers <b>[edgeid1] [edgeid2] [jacc]</b> ]<h6>
+<h6>[Observation2: File size can be dramatically decreased if we can store output in a single line]<h6>
 <p>
 This will reduce the size of the jaccs file
 </p>
