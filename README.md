@@ -6,7 +6,7 @@
 ------------------------------------------------------------------------------------------
 <h2>2. Run Link Clustering</h2>
 
-<h3>Step 1: Create the Jaccard Co-efficients <h3>
+<h3>Step 1: Create the Jaccard Co-efficients </h3>
 
 <p>Example: ./linkedList finalSWEdgeList.csv finalSWEdgeList.jacc <br>
 Above example uses linkedlist implementation
@@ -40,8 +40,9 @@ Steps:</br>
 </p>
 </p>
 <p>
-./createEdgesToEdgeIDJaccsFile network.pairs network.jaccs networkEdgeIdMap.csv newnetwork.jaccs"
+./createEdgesToEdgeIDJaccsFile network.pairs network.jaccs networkEdgeIdMap.csv newnetwork.jaccs
 </p>
+
 
 <p>
 Step1.1: <a href="http://dumps.wikimedia.org/simplewiki/" target="_blank">Go to the page for latest dump.</a></br>
