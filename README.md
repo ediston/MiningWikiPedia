@@ -1,11 +1,48 @@
 # MiningWikiPedia
 <h1>Goal: Mining Wikipedia to get useful results <h1>
-<h5>[NOTE: As Simple wiki is a smaller wikipedia, I am going to use Simple Wiki. But I am guessing all the steps listed below can be applied to whole Wikipedia as well.]</h5>
-<h5>[NOTE: Wikipedia has multiple pageIds for same page titles. We should use the newest pageId's everywhere for a given page title.]</h5>
-<h2>How to get Simple Wikipedia(SW) data?</h2>
+
+<h2>1. Parse Wiki DB?</h2> 
+<p>Read parsingWikiDB.md</p>
 ------------------------------------------------------------------------------------------
-<h3>Step1: How to get Id title mapping for Wikipedia</h3>
+<h2>2. Run Link Clustering</h2>
+
+<h3>Step 1: Create the Jaccard Co-efficients <h3>
+
+<p>Example: ./linkedList finalSWEdgeList.csv finalSWEdgeList.jacc <br>
+Above example uses linkedlist implementation
+</p>
+<table>
+<tr><td>
+Time taken </td><td> 8743.57 seconds
+</td></tr>
+<tr><td>
+finalSWEdgeList.jacc file size  </td><td> 61G
+</td></tr>
+</table>
 Example: What is the page id for "August" page?
+<h3>Step 2: Create edge id map <h3>
+<p>
+This will reduce the size of the jaccs file
+</p>
+<h6>Why?</h6>
+<p>
+1. We have smaller run-time memory.</br>
+2. Also smaller storage is required</br></br>
+</p>
+<h6>How?</h6>
+<p>
+Steps:</br>
+1. Go through the .jaccs file</br>
+2. Read in a new line, edge edge jacc</br>
+3. For a new edge, increment the index and store mapping in a map</br>
+4. For an exisiting edge, use the stored mapped index</br>
+5. Replace line by id id jacc</br>
+</p>
+</p>
+<p>
+./createEdgesToEdgeIDJaccsFile network.pairs network.jaccs networkEdgeIdMap.csv newnetwork.jaccs"
+</p>
+
 <p>
 Step1.1: <a href="http://dumps.wikimedia.org/simplewiki/" target="_blank">Go to the page for latest dump.</a></br>
 Step1.2: Download <b>Base per-page data (id, title, old restrictions, etc)</b> or simplewiki-date-page.sql.gz file</br>
