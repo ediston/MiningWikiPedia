@@ -13,7 +13,10 @@ Above example uses linkedlist implementation
 </p>
 <table>
 <tr><td>
-Time taken </td><td> 8743.57 seconds
+Time taken by my implementation</td><td> 8743.57 seconds
+</td></tr>
+<tr><td>
+Time taken by author's implementation</td><td> 21914.4 seconds
 </td></tr>
 <tr><td>
 finalSWEdgeList.jacc file size  </td><td> 61G
