@@ -74,8 +74,8 @@ File size reduced by  </td><td> 31.14%
 ----------------------------------
 <h3>Step 3: Sort various thresholds</h3>
 <p>
-Compile:$ g++ -O3 -o createdSortedJaccsFile createdSortedJaccsFile.cpp
-Run:  $ ./createdSortedJaccsFile network.jaccs sortedjaccs.csv
+Compile:$ g++ -O3 -o createdSortedJaccsFile createdSortedJaccsFile.cpp </br>
+Run:  $ ./createdSortedJaccsFile newnetwork.jaccs sortedjaccs.csv
 </p>
 <table>
 <tr>
