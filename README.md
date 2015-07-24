@@ -57,8 +57,16 @@ Time taken to create new file:</td><td> 4476.1 seconds
 New finalSWEdgeList.jacc file size  </td><td> 42G
 </td></tr>
 <tr><td>
-File size decreased by  </td><td> 31.14%
+File size reduced by  </td><td> 31.14%
 </td></tr>
+<tr>
+ <td>
+ Total edge edge pairs in jacc file
+ </td>
+ <td>
+  1,828,446,173
+ </td>
+</tr>
 </table>
 </p>
 
