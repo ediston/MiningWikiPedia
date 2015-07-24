@@ -105,7 +105,15 @@ Run:  $ ./createdSortedJaccsFile newnetwork.jaccs sortedjaccs.csv
  <td>  
  1.000000
  </td>
-</tr>
+ </tr>
+ <tr>
+  <td>
+   Time taken
+  </td>
+  <td>
+   1315.53 seconds ≈ 22 Minutes 
+  </td>
+ </tr>
 </table>
 </p>
 ----------------------------------
