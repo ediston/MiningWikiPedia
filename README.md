@@ -138,7 +138,7 @@ Example:  $ ./calcDensityForDiffThresh networkEdgeIdMap.csv network.jaccs sorted
 </table>
 </p>
 
-<img href="https://cloud.githubusercontent.com/assets/4389099/8891292/ecd117c4-3323-11e5-957c-6d89742a7a99.png"
+<img src="https://cloud.githubusercontent.com/assets/4389099/8891292/ecd117c4-3323-11e5-957c-6d89742a7a99.png"
  alt="SimpleWiki D vs Threshold" style="width:304px;height:228px;">  
 
 ----------------------------------
