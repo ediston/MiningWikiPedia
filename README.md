@@ -74,8 +74,12 @@ File size reduced by  </td><td> 31.14%
 ----------------------------------
 <h3>Step 3: Sort various thresholds</h3>
 <p>
-Compile:$ g++ -O3 -o createdSortedJaccsFile createdSortedJaccsFile.cpp </br>
-Run:  $ ./createdSortedJaccsFile newnetwork.jaccs sortedjaccs.csv
+Compile:$ g++ -O3 -o createSortedJaccsFile createdSortedJaccsFile.cpp </br>
+Run:  $ ./createSortedJaccsFile newnetwork.jaccs sortedjaccs.csv
+Run:  $ /home/vdhiman/linkClusteringRepo/Link-Clustering-Algorithm/Step3/createSortedJaccsFile newfinalSWEdgeListbkup.jacc finalSortedSWEdgeList.jacc sortedjaccs.csv > runtimeSortedjaccs 
+Done writing sorted New NW JaccsFile! Time taken = 1590.54 seconds. 
+Total Time taken = 5283.32 seconds. 
+ 
 </p>
 <table>
 <tr>
