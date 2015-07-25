@@ -117,3 +117,26 @@ Run:  $ ./createdSortedJaccsFile newnetwork.jaccs sortedjaccs.csv
 </table>
 </p>
 ----------------------------------
+<h3>Step 4: Run clustering</h3>
+<p>
+Example:  $ g++ -std=c++0x -O3 -o calcDensityForDiffThresh calcDensityForDiffThresh.cpp
+Example:  $ ./calcDensityForDiffThresh networkEdgeIdMap.csv network.jaccs sortedjaccs.csv  Nthresholds threshDensity.csv MODE
+
+<table>
+<tr>
+ <th>RESULTS</th>
+ <th></th>
+</tr>
+<tr>
+ <td>
+  highest D 
+ </td>
+ <td>
+ 0.380500 at thresh = 0.476230
+ </td> 
+ </tr>
+</table>
+</p>
+
+
+----------------------------------
