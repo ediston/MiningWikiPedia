@@ -120,7 +120,9 @@ Run:  $ ./createdSortedJaccsFile newnetwork.jaccs sortedjaccs.csv
 <h3>Step 4: Run clustering</h3>
 <p>
 Example:  $ g++ -std=c++0x -O3 -o calcDensityForDiffThresh calcDensityForDiffThresh.cpp
-Example:  $ ./calcDensityForDiffThresh networkEdgeIdMap.csv network.jaccs sortedjaccs.csv  Nthresholds threshDensity.csv MODE
+          $ ./calcDensityForDiffThresh networkEdgeIdMap.csv network.jaccs sortedjaccs.csv  Nthresholds threshDensity.csv MODE
+
+Example: $ /home/vdhiman/linkClusteringRepo/Link-Clustering-Algorithm/Step3/calcDensityForDiffThresh networkEdgeIdMap.csv finalSortedSWEdgeList.jacc sortedjaccs.csv 500 threshDensity500.csv > runtimeDensityForDiffThresh500 &
 
 <table>
 <tr>
