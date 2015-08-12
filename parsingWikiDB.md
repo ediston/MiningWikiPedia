@@ -112,7 +112,7 @@ Step 4.4: Count total disambg edges in finalSWEdgeList.csv</br>
  </tr>
  <tr>
   <td>Finally Total Edges</td>
-  <td>4721604</td>
+  <td>913,322,740</td>
  </tr>
  <tr>
   <td>Total Edges, after removing Duplicates</td>
