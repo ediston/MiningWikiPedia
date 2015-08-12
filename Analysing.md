@@ -10,6 +10,9 @@ A list of sample bad links is <a href="https://github.com/ediston/MiningWikiPedi
 Example run: $ ./listCsvToIdCsv filteredSWPageIDTitleMap.csv badEdgeList.csv badEdgeListIdId.csv </br>
 This example is for Simple Wiki. There are 72 bad links in badEdgeListIdId.csv
 
-<h4>Step 3: Check if all links exist<h4>
+<h3>Step 3: Check if all links exist<h3>
+We use listCsvToIdCsv.cpp to filter out any edges which do not exist.</br>
+Then we convert title title list to id id list.</br>
+Finally we take first 60 links from bad links for our test</br>
 
  
