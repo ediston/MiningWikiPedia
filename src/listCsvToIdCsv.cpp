@@ -1,6 +1,5 @@
-/*Script to check what links
- * exist on a given page Id
- * */
+ /*Script to convert <title title> file to <id id> file
+  * **/
 #include <cstdlib>
 #include <fstream>
 #include<iostream>
