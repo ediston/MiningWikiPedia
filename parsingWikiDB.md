@@ -103,6 +103,31 @@ Step 4.4: Count total disambg edges in finalSWEdgeList.csv</br>
  </tr>
 </table> 
 </p>
-
 ------------------------------------------------------------------------------------------
+<h1>Results, Wikipedia DB of <a href="https://dumps.wikimedia.org/enwiki/20150602/" target="_blank">June, 2015</a> </h1>
+<table>
+ <tr>
+  <td>Total pages, with duplicates</td>
+  <td>36,505,110</td>
+ </tr>
+ <tr>
+  <td>Finally Total Edges</td>
+  <td>4721604</td>
+ </tr>
+ <tr>
+  <td>Total Edges, after removing Duplicates</td>
+  <td>3432718</td>
+ </tr>
+  <tr>
+  <td>Total File Size On disk, after removing Duplicates</td>
+  <td>44 M</td>
+ </tr>
+ <tr>
+  <td>Total Disamb edges</td>
+  <td>19404</td>
+ </tr>
+</table> 
+</p>
+------------------------------------------------------------------------------------------
+
 ./cluster networkEdgeIdMap.csv newnetwork.jaccs newnetwork.clusters newnetwork.cluster_stats 0.01 > runtimecluster
