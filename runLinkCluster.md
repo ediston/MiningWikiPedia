@@ -195,7 +195,7 @@ Example: $ /home/vdhiman/linkClusteringRepo/Link-Clustering-Algorithm/Step3/calc
 </table>
 </p>
 
-<img src="https://cloud.githubusercontent.com/assets/4389099/8891292/ecd117c4-3323-11e5-957c-6d89742a7a99.png"
- alt="SimpleWiki D vs Threshold" style="width:304px;height:228px;">  
+<img src="https://cloud.githubusercontent.com/assets/4389099/9424244/c47f8490-48e5-11e5-93ac-a28fadf65e6e.png"
+ alt="Directed SimpleWiki D vs Threshold" style="width:304px;height:228px;">  
 
 ----------------------------------
