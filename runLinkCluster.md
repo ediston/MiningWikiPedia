@@ -12,10 +12,13 @@ Above example uses linkedlist implementation
 </p>
 <table>
 <tr><td>
-Time taken by my implementation</td><td> 8743.57 seconds
+Time taken by linked link implementation, undirected</td><td> 8743.57 seconds
 </td></tr>
 <tr><td>
-Time taken by author's implementation</td><td> 21914.4 seconds
+Time taken by linked link implementation, directed</td><td> 1171.27 seconds
+</td></tr>
+<tr><td>
+Time taken by author's implementation, undirected</td><td> 21914.4 seconds
 </td></tr>
 <tr><td>
 finalSWEdgeList.jacc file size  </td><td> 61G
@@ -48,8 +51,8 @@ Steps:</br>
 <p>
 <table>
 <tr>
- <th>RESULTS</th>
- <th></th>
+ <th>RESULTS, undirected</th>
+  
 </tr>
 <tr><td>
 Time taken to create new file:</td><td> 4476.1 seconds
@@ -70,7 +73,31 @@ File size reduced by  </td><td> 31.14%
 </tr>
 </table>
 </p>
-
+<p>
+<table>
+<tr>
+ <th>RESULTS, Directed </th>
+  
+</tr>
+<tr><td>
+Time taken to create new file:</td><td> 4476.1 seconds
+</td></tr> 
+<tr><td>
+New finalSWEdgeList.jacc file size  </td><td> 42G
+</td></tr>
+<tr><td>
+File size reduced by  </td><td> 31.14%
+</td></tr>
+<tr>
+ <td>
+ Total edge edge pairs in jacc file
+ </td>
+ <td>
+  1,828,446,173
+ </td>
+</tr>
+</table>
+</p>
 ----------------------------------
 <h3>Step 3: Sort various thresholds</h3>
 <p>
