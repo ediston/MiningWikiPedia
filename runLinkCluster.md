@@ -83,20 +83,20 @@ File size reduced by  </td><td> 31.14%
   
 </tr>
 <tr><td>
-Time taken to create new file:</td><td> 4476.1 seconds
+Time taken to create new file:</td><td> 1229.9 seconds
 </td></tr> 
 <tr><td>
-New finalSWEdgeList.jacc file size  </td><td> 42G
+New newfinalDirSWEL.jaccs file size  </td><td> 17G
 </td></tr>
 <tr><td>
-File size reduced by  </td><td> 31.14%
+File size reduced by  </td><td> 29.1%
 </td></tr>
 <tr>
  <td>
  Total edge edge pairs in jacc file
  </td>
  <td>
-  1,828,446,173
+    693,943,606
  </td>
 </tr>
 </table>
