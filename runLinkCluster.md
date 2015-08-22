@@ -23,6 +23,9 @@ Time taken by author's implementation, undirected</td><td> 21914.4 seconds
 <tr><td>
 finalSWEdgeList.jacc file size  </td><td> 61G
 </td></tr>
+<tr><td>
+Directed finalDirSWEL.jaccs file size  </td><td> 24G
+</td></tr>
 </table> 
 <h3>Step 2: Create edge id map <h3>
 <h6>[Observation1: File size can be dramatically decreased if we can use id's for edges, then we have three numbers <b>[edgeid1] [edgeid2] [jacc]</b> ]<h6>
