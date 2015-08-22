@@ -153,9 +153,9 @@ Total Time taken = 5283.32 seconds.
 ----------------------------------
 <h3>Step 4: Run clustering</h3>
 <p>
-Example:  $ g++ -std=c++0x -O3 -o calcDensityForDiffThresh calcDensityForDiffThresh.cpp
-          $ ./calcDensityForDiffThresh networkEdgeIdMap.csv network.jaccs sortedjaccs.csv  Nthresholds threshDensity.csv MODE
-
+Example:  $ g++ -std=c++0x -O3 -o calcDensityForDiffThresh calcDensityForDiffThresh.cpp </br>
+          $ ./calcDensityForDiffThresh networkEdgeIdMap.csv network.jaccs sortedjaccs.csv  Nthresholds threshDensity.csv MODE</br>
+</br>
 Example: $ /home/vdhiman/linkClusteringRepo/Link-Clustering-Algorithm/Step3/calcDensityForDiffThresh networkEdgeIdMap.csv finalSortedSWEdgeList.jacc sortedjaccs.csv 500 threshDensity500.csv > runtimeDensityForDiffThresh500 &
 
 <table>
