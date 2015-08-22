@@ -158,9 +158,10 @@ Example:  $ g++ -std=c++0x -O3 -o calcDensityForDiffThresh calcDensityForDiffThr
 </br>
 Example: $ /home/vdhiman/linkClusteringRepo/Link-Clustering-Algorithm/Step3/calcDensityForDiffThresh networkEdgeIdMap.csv finalSortedSWEdgeList.jacc sortedjaccs.csv 500 threshDensity500.csv > runtimeDensityForDiffThresh500 &
 
+<h3>Undirected Results</h3>
 <table>
 <tr>
- <th>RESULTS</th>
+ <th>RESULTS Undirected</th>
  <th></th>
 </tr>
 <tr>
@@ -169,6 +170,26 @@ Example: $ /home/vdhiman/linkClusteringRepo/Link-Clustering-Algorithm/Step3/calc
  </td>
  <td>
  0.380500 at thresh = 0.476230
+ </td> 
+ </tr>
+</table>
+</p>
+
+<img src="https://cloud.githubusercontent.com/assets/4389099/8891292/ecd117c4-3323-11e5-957c-6d89742a7a99.png"
+ alt="SimpleWiki D vs Threshold" style="width:304px;height:228px;">  
+ 
+ <h3>Directed Results</h3>
+<table>
+<tr>
+ <th>RESULTS Directed</th>
+ <th></th>
+</tr>
+<tr>
+ <td>
+  highest D 
+ </td>
+ <td>
+0.239895 at thresh = 0.477901
  </td> 
  </tr>
 </table>
