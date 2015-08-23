@@ -18,6 +18,9 @@ Time taken by linked link implementation, undirected</td><td> 8743.57 seconds
 Time taken by linked link implementation, directed</td><td> 1171.27 seconds
 </td></tr>
 <tr><td>
+Time taken by linked link implementation, undirected with rankings and removed redirect pages </td><td> 7033.48 seconds
+</td></tr>
+<tr><td>
 Time taken by author's implementation, undirected</td><td> 21914.4 seconds
 </td></tr>
 <tr><td>
