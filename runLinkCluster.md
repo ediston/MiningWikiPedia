@@ -27,6 +27,9 @@ Time taken by author's implementation, undirected</td><td> 21914.4 seconds
 finalSWEdgeList.jacc file size  </td><td> 61G
 </td></tr>
 <tr><td>
+UnDirected, page view including finalDirSWEL.jaccs file size  </td><td> 61G
+</td></tr>
+<tr><td>
 Directed finalDirSWEL.jaccs file size  </td><td> 24G
 </td></tr>
 </table> 
@@ -79,6 +82,35 @@ File size reduced by  </td><td> 31.14%
 </tr>
 </table>
 </p>
+
+<p>
+./createEdgesToEdgeIDJaccsFile network.pairs network.jaccs networkEdgeIdMap.csv newnetwork.jaccs
+</p> 
+<p>
+<table>
+<tr>
+<th>RESULTS, Directed without redirects and undirected with rankings</th>
+</tr>
+<tr><td>
+Time taken to create new file:</td><td> 5362.61 seconds
+</td></tr> 
+<tr><td>
+New finalSWEdgeList.jacc file size  </td><td> 43G
+</td></tr>
+<tr><td>
+File size reduced by  </td><td> 31.11%
+</td></tr>
+<tr>
+ <td>
+ Total edge edge pairs in jacc file
+ </td>
+ <td>
+  1,826,325,214
+ </td>
+</tr>
+</table>
+</p>
+
 <p>
 <table>
 <tr>
