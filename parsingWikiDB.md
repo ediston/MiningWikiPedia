@@ -31,6 +31,7 @@ Step3.1: <a href="http://dumps.wikimedia.org/simplewiki/" target="_blank">Go to 
 Step3.2: Download <b>Redirect list</b> or simplewiki-20150603-redirect.sql.gz  file</br>
 Step3.3: Run: $ zcat simplewiki-20150603-redirect.sql.gz | python sqlDumpTo_ID_Title_Map.py > SWRedirectTT.csv</br>
 Step3.4: We need to removed redirects from the edge list id id</br>
+Step3.5: We need to remove edges with Wikimedia_Commons</br>
 sqlDumpTo_ID_Title_Map.py can be found in the src folder
 </p>
 
@@ -104,6 +105,10 @@ Step 5.4: Count total disambg edges in finalSWEdgeList.csv</br>
  <tr>
   <td>Total Edges, after removing Duplicates</td>
   <td>3432718</td>
+ </tr>
+ <tr>
+  <td>Total Edges, after removing redirect edges</td>
+  <td>3421425</td>
  </tr>
   <tr>
   <td>Total File Size On disk, after removing Duplicates</td>
