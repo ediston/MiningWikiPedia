@@ -22,14 +22,26 @@ Step2.2: Download <b>page-to-page link records</b> or simplewiki-date-pagelinks.
 Step2.3: Run: $ zcat simplewiki-date-pagelinks.sql.gz | python sqlDumpTo_ID_Title_Map.py > SW_ID_Title_Links.csv</br>
 sqlDumpTo_ID_Title_Map.py can be found in the src folder
 </p>
+
 ------------------------------------------------------------------------------------------
-<h3>Step3: Pre Process Edge list</h3>
+<h3>Step3: Remove redirects</h3>
+Example: What are the the page ids linked on "August" page?
 <p>
-Step3.1: Let's firstly remove all page-ids from "SWPageIDTitleMap.csv" which are no more live.</br> 
+Step3.1: <a href="http://dumps.wikimedia.org/simplewiki/" target="_blank">Go to the page for latest dump.</a></br>
+Step3.2: Download <b>Redirect list</b> or simplewiki-20150603-redirect.sql.gz  file</br>
+Step3.3: Run: $ zcat simplewiki-20150603-redirect.sql.gz | python sqlDumpTo_ID_Title_Map.py > SWRedirectTT.csv</br>
+Step3.4: We need to removed redirects from the edge list id id</br>
+sqlDumpTo_ID_Title_Map.py can be found in the src folder
+</p>
+
+------------------------------------------------------------------------------------------
+<h3>Step4: Pre Process Edge list</h3>
+<p>
+Step4.1: Let's firstly remove all page-ids from "SWPageIDTitleMap.csv" which are no more live.</br> 
 &nbsp;&nbsp;&nbsp;&nbsp;*  Run: $ python checkWebPageExists.py SWPageIDTitleMap.csv </br> 
 &nbsp;&nbsp;&nbsp;&nbsp;*  This will create a new file "filtered_SWPageIDTitleMap.csv".</br>
 &nbsp;&nbsp;&nbsp;&nbsp;*  Note: This step might take a lot of time. For simple wiki it took almost 24 hours.</br></br>
-Step3.2: Convert Id-title edge list to id id edge list.</br>
+Step4.2: Convert Id-title edge list to id id edge list.</br>
 &nbsp;&nbsp;&nbsp;&nbsp;*  Compile: $ g++ -O3 -o convert_idTitle_Edgelist_To_IdId convert_idTitle_Edgelist_To_IdId.cpp
 &nbsp;&nbsp;&nbsp;&nbsp;*  Run: $ ./convert_idTitle_Edgelist_To_IdId "Id_Tile_Map_filename" "Id_title_EdgeList_filename" SW_ID_Title_Links.csv </br>
 <table>
@@ -66,20 +78,20 @@ and read title,id mapping into titleIdMap
 *  This will create an unsorted, filtered Edge List. But for most of the work we need a sorted edge list, done in next step</br>
 *  Filtered here means that the page titles and page ids which are not there in "filtered_SWPageIDTitleMap.csv" will be removed </br>
 
-Step3.3: Remove Duplicate and same node edges like "A  A"     </br>
+Step4.3: Remove Duplicate and same node edges like "A  A"     </br>
 Compile: $ g++ -O3 -o remDupAndSort removeDupAndSort.cpp</br>
 Usage  : $ ./remDupAndSort filtered_Id_Id_EdgeList.csv finalSWEdgeList.csv</br>
 </p>
 </p>
 </br>
 ------------------------------------------------------------------------------------------
-<h4>Step 4: Get list of disambiguation</h4>
+<h4>Step 5: Get list of disambiguation</h4>
 <p>Disambiguation pages will form the ground truth. All such pages should be definitely in different clusters.</p>
 <p>
-Step 4.1: <a href="http://dumps.wikimedia.org/simplewiki/" target="_blank">Go to the page for latest dump.</a></br>
-Step 4.2: Download <b>Wiki category membership link records</b>simplewiki-date-categorylinks.sql.gz file</br>
-Step 4.3: Run: $ zcat simplewiki-date-categorylinks.sql.gz | python sqlDumpTo_Disamb_Id.py > disamb.csv</br>
-Step 4.4: Count total disambg edges in finalSWEdgeList.csv</br>
+Step 5.1: <a href="http://dumps.wikimedia.org/simplewiki/" target="_blank">Go to the page for latest dump.</a></br>
+Step 5.2: Download <b>Wiki category membership link records</b>simplewiki-date-categorylinks.sql.gz file</br>
+Step 5.3: Run: $ zcat simplewiki-date-categorylinks.sql.gz | python sqlDumpTo_Disamb_Id.py > disamb.csv</br>
+Step 5.4: Count total disambg edges in finalSWEdgeList.csv</br>
 &nbsp;&nbsp;&nbsp;&nbsp;Compile: $ g++ -O3 -o countDisamEdgeNodes countDisamEdgeNodes.cpp</br>
 &nbsp;&nbsp;&nbsp;&nbsp;Usage  : $ ./countDisamEdgeNodes filtered_Id_Id_EdgeList.csv disamb.csv</br>
 ------------------------------------------------------------------------------------------
